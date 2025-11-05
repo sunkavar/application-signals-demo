@@ -1,0 +1,9 @@
+export AGENT_OBSERVABILITY_ENABLED="true"
+export OTEL_PYTHON_DISTRO=aws_distro
+export OTEL_PYTHON_CONFIGURATOR=aws_configurator
+export OTEL_EXPORTER_OTLP_LOGS_HEADERS="x-aws-log-group=appointment-agent-logs,x-aws-log-stream=runtime-logs,x-aws-metric-namespace=bedrock-agentcore"
+export OTEL_RESOURCE_ATTRIBUTES="service.name=appointment_agent,aws.log.group.names=appointment-agent-logs"
+export OTEL_EXPORTER_OTLP_PROTOCOL="http/protobuf"
+export OTEL_TRACES_EXPORTER="otlp"
+export AWS_REGION="us-west-2"
+
